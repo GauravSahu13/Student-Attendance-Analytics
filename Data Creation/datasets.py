@@ -4,6 +4,7 @@ from random import choice
 
 
 def subject(s1, s2, s3, name_lst, counter):
+
     attended_s1 = choice([0, 1])
     attended_s2 = choice([0, 1])
     attended_s3 = choice([0, 1])

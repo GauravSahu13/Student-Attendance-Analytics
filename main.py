@@ -42,7 +42,7 @@ def add_student():
         Gmail = request.form.get("Gmail")
 
         # saving data into csv file
-        with open('ATT.csv', 'a') as readFile:
+        with open('Register Details.csv', 'a') as readFile:
             fieldnames = ['Name','Gender', 'Eng_Year','Branch', 'Gmail']
             writer = csv.DictWriter(readFile, fieldnames=fieldnames)
             readFile.seek(0, 2)
@@ -65,7 +65,7 @@ def mark_student():
         Attendance = request.form.get("Attendance")
 
         # saving attendance into csv file
-        with open('mark.csv', 'a') as readFile:
+        with open('Attendance Portal.csv', 'a') as readFile:
             fieldnames = ['Date', 'Branch', 'Eng_Year', 'Roll_No', 'Subjects', 'Attendance']
             writer = csv.DictWriter(readFile, fieldnames=fieldnames)
             readFile.seek(0, 2)
