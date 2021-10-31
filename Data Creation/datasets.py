@@ -9,6 +9,7 @@ def subject(s1, s2, s3, name_lst, counter):
     attended_s2 = choice([0, 1])
     attended_s3 = choice([0, 1])
     Total_Lec = 3
+
     temp_dict = {'Enrolled_ID': int(counter)+1,
                  'Name': name_lst[int(counter)],
                  'Date': c_date.date(),
