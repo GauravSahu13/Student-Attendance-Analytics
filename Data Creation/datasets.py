@@ -3,8 +3,8 @@ import pandas as pd
 from random import choice
 
 
+# Data created for analysis with help of code
 def subject(s1, s2, s3, name_lst, counter):
-
     attended_s1 = choice([0, 1])
     attended_s2 = choice([0, 1])
     attended_s3 = choice([0, 1])
@@ -21,7 +21,7 @@ def subject(s1, s2, s3, name_lst, counter):
                  f'{s3}': attended_s3,}
     return temp_dict
 
-# import names
+# import names                                            # for unique names
 # print([names.get_full_name() for x in range(60)])
 
 lst = []
@@ -48,7 +48,7 @@ for c_date in pd.bdate_range(start='2/1/2021', end='6/2/2021'):
                 temp_dict = subject('ELE','FYP','MME',fourth_year_name,counter)
                 lst.append(temp_dict)
 
-df = pd.DataFrame(lst)
+df = pd.DataFrame(lst)                   # storing data in dataframe
 # print(df)
-df1 = df.to_csv('demo.csv', index=False)
+df1 = df.to_csv('demo.csv', index=False)      # DF to CSV
 print(df1)
