@@ -65,7 +65,6 @@ def mark_student():
             if readFile.tell() == 0:
                 writer.writeheader()
             writer.writerow({'Date': Date, 'Branch': Branch, 'Eng_Year': Eng_Year, 'Roll_No': Roll_No, 'Subjects': Subjects, 'Attendance': Attendance})
-
     return render_template("mark_attendance.html")
 
 @app.route("/analysis")
