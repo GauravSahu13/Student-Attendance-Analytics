@@ -4,7 +4,6 @@ import csv
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -17,12 +16,15 @@ def view_student():
 @app.route("/extc")
 def extc():
     return render_template("extc.html")
+
 @app.route("/it")
 def IT():
     return render_template("IT.html")
+
 @app.route("/mech")
 def mech():
     return render_template("mech.html")
+
 @app.route("/comps")
 def comps():
     return render_template("comps.html")
