@@ -1,4 +1,4 @@
-Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended(%),M1,CP,BEE,DBR,DSA,M3,OOPs,DESIGN,WEB,DMS,LLE,DIGITAL
+Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended_Percentage,M1,CP,BEE,DBR,DSA,M3,OOPs,DESIGN,WEB,DMS,LLE,DIGITAL
 1,Thomas Moon,2021-02-01,1,COMPS,3,33.33,0.0,0.0,1.0,,,,,,,,,
 2,Timothy Frey,2021-02-01,1,COMPS,3,100.0,1.0,1.0,1.0,,,,,,,,,
 3,John Neal,2021-02-01,1,COMPS,3,33.33,0.0,1.0,0.0,,,,,,,,,

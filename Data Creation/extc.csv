@@ -1,4 +1,4 @@
-Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended(%),M1,CP,BEE,VSLI,EV,Robotics,SAP,MBS,PLE,ELE,FYP,MME
+Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended_Percentage,M1,CP,BEE,VSLI,EV,Robotics,SAP,MBS,PLE,ELE,FYP,MME
 1,Christopher Smith,2021-02-01,1,EXTC,3,0.0,0.0,0.0,0.0,,,,,,,,,
 2,Lou Nero,2021-02-01,1,EXTC,3,66.67,1.0,1.0,0.0,,,,,,,,,
 3,Vera Messina,2021-02-01,1,EXTC,3,66.67,0.0,1.0,1.0,,,,,,,,,

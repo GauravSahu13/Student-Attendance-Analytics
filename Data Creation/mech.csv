@@ -1,4 +1,4 @@
-Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended(%),M1,CP,BEE,M3,SOM,THERMO,HT,DESIGN,MANU,MD,IE,PPE
+Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended_Percentage,M1,CP,BEE,M3,SOM,THERMO,HT,DESIGN,MANU,MD,IE,PPE
 1,Bernice Compton,2021-02-01,1,MECH,3,66.67,0.0,1.0,1.0,,,,,,,,,
 2,Richard Welch,2021-02-01,1,MECH,3,33.33,0.0,0.0,1.0,,,,,,,,,
 3,Carolyn Morton,2021-02-01,1,MECH,3,66.67,1.0,1.0,0.0,,,,,,,,,

@@ -35,22 +35,22 @@ branch_name = 'EXTC'
 if year_no == 1:
     year_df  = educationyearwise_branch_data(student_df,branch_name, year_no )
     year_df = year_df.groupby(['Name','Enrolled_ID','Year']).agg(M1= ('M1','sum'),CP= ('CP','sum'),
-                                                          BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                          BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
 
 elif year_no == 2:
     year_df  = educationyearwise_branch_data(student_df,branch_name, year_no )
     year_df = year_df.groupby(['Name','Enrolled_ID','Year']).agg(VSLI= ('VSLI','sum'),EV= ('EV','sum'),
-                                                          Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                          Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
 
 elif year_no == 3:
     year_df  = educationyearwise_branch_data(student_df,branch_name, year_no )
     year_df = year_df.groupby(['Name','Enrolled_ID','Year']).agg(SAP= ('SAP','sum'),MBS= ('MBS','sum'),PLE= ('PLE','sum'),
-                                                          Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                          Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
     
 elif year_no == 4:
     year_df  = educationyearwise_branch_data(student_df,branch_name, year_no )
     year_df = year_df.groupby(['Name','Enrolled_ID','Year']).agg(ELE= ('ELE','sum'),FYP= ('FYP','sum'),MME= ('MME','sum'),
-                                                          Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                          Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
 else: 
     print("Invalid Input")
 
@@ -116,7 +116,7 @@ if branch_name == "IT":
                                                 Logic_Design= ('Logic_Design','sum'),DMS= ('DMS','sum'),
                                                 DS= ('DS','sum'), DBA= ('DBA','sum'), OS= ('OS','sum'), 
                                                 OOPs= ('OOPs','sum'), M4= ('M4','sum'), LMS= ('LMS','sum'), 
-                                                Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
 elif branch_name == "MECH":
     month_df  =   monthwise_branch_data(student_df,branch_name, month_no)  
     month_df = month_df.groupby(['Name','Enrolled_ID','Month','Year','M1']).agg( CP= ('CP','sum'),
@@ -125,7 +125,7 @@ elif branch_name == "MECH":
                                                            HT= ('HT','sum'), DESIGN= ('DESIGN','sum'),
                                                            MANU= ('MANU','sum'), MD= ('MD','sum'),
                                                            IE= ('IE','sum'), PPE= ('PPE','sum'),
-                                                           Lec_Attended_Percentage= ('Lec_Attended(%)','mean')).reset_index()
+                                                           Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean')).reset_index()
 
 
 # print(month_df.head())
@@ -186,7 +186,7 @@ if branch_name == "COMPS":
                                                 DBR= ('DBR','sum'),DSA= ('DSA','sum'),
                                                 WEB= ('WEB','sum'), DMS= ('DMS','sum'), OOPs= ('OOPs','sum'), 
                                                 LLE= ('LLE','sum'), DIGITAL= ('DIGITAL','sum'),
-                                                Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))).reset_index()
+                                                Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))).reset_index()
 elif branch_name == "MECH":
     week_df  =   weekwise_branch_data(student_df,branch_name, week_no )
     week_df= (week_df.groupby(['Name','Enrolled_ID','Week_Number','Year']).agg(M1= ('M1','sum'), CP= ('CP','sum'),
@@ -195,7 +195,7 @@ elif branch_name == "MECH":
                                                            HT= ('HT','sum'), DESIGN= ('DESIGN','sum'),
                                                            MANU= ('MANU','sum'), MD= ('MD','sum'),
                                                            IE= ('IE','sum'), PPE= ('PPE','sum'),
-                                                           Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))).reset_index()
+                                                           Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))).reset_index()
 
 
 

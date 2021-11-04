@@ -1,4 +1,4 @@
-Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended(%),M1,CP,BEE,M3,Logic_Design,DMS,DS,DBA,OS,OOPs,M4,LMS
+Enrolled_ID,Name,Date,Year,Branch,Total no.of Lec,Lec_Attended_Percentage,M1,CP,BEE,M3,Logic_Design,DMS,DS,DBA,OS,OOPs,M4,LMS
 1,Trisha Sanders,2021-02-01,1,IT,3,33.33,0.0,0.0,1.0,,,,,,,,,
 2,Sarah Newborn,2021-02-01,1,IT,3,33.33,1.0,0.0,0.0,,,,,,,,,
 3,Shantel Townsend,2021-02-01,1,IT,3,66.67,0.0,1.0,1.0,,,,,,,,,

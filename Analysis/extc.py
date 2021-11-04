@@ -32,8 +32,8 @@ first_extc = first_extc.loc[(first_extc['Branch'] == 'EXTC')]
 # print(first_extc)
 
 ''' Grouping data on basis of Name ,Year'''
-finalFirstExtc = (first_extc.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))).reset_index()
-# finalFirstExtc = first_extc.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))["Lec_Attended_Percentage"].nsmallest(20)
+finalFirstExtc = (first_extc.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))).reset_index()
+# finalFirstExtc = first_extc.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))["Lec_Attended_Percentage"].nsmallest(20)
 # print (finalFirstExtc)
 
 # temp_df = finalFirstExtc[finalFirstExtc['Lec_Attended_Percentage'] >= 50]
@@ -82,8 +82,8 @@ plt.show()
 #
 # ''' Grouping data on basis of Name ,Year'''
 #
-# # finalSecondExtc = second_extc.groupby(['Name','Enrolled_ID']).agg(VSLI= ('VSLI','sum'),EV= ('EV','sum'),Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
-# finalSecondExtc = second_extc.groupby(['Name','Enrolled_ID']).agg(VSLI= ('VSLI','sum'),EV= ('EV','sum'),Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))["Lec_Attended_Percentage"].nsmallest(20)
+# # finalSecondExtc = second_extc.groupby(['Name','Enrolled_ID']).agg(VSLI= ('VSLI','sum'),EV= ('EV','sum'),Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
+# finalSecondExtc = second_extc.groupby(['Name','Enrolled_ID']).agg(VSLI= ('VSLI','sum'),EV= ('EV','sum'),Robotics= ('Robotics','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))["Lec_Attended_Percentage"].nsmallest(20)
 # # print(finalSecondExtc)
 #
 #
@@ -103,8 +103,8 @@ plt.show()
 #
 # ''' Grouping data on basis of Name ,Year'''
 #
-# # finalThirdExtc = third_extc.groupby(['Name','Enrolled_ID']).agg(SAP= ('SAP','sum'),MBS= ('MBS','sum'),PLE= ('PLE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
-# finalThirdExtc = third_extc.groupby(['Name','Enrolled_ID']).agg(SAP= ('SAP','sum'),MBS= ('MBS','sum'),PLE= ('PLE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))["Lec_Attended_Percentage"].nsmallest(20)
+# # finalThirdExtc = third_extc.groupby(['Name','Enrolled_ID']).agg(SAP= ('SAP','sum'),MBS= ('MBS','sum'),PLE= ('PLE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
+# finalThirdExtc = third_extc.groupby(['Name','Enrolled_ID']).agg(SAP= ('SAP','sum'),MBS= ('MBS','sum'),PLE= ('PLE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))["Lec_Attended_Percentage"].nsmallest(20)
 # print(finalThirdExtc)
 #
 #
@@ -134,7 +134,7 @@ plt.show()
 # ''' Grouping data on basis of Name ,Year'''
 #
 #
-# # finalFourthExtc = fourth_extc.groupby(['Name','Enrolled_ID']).agg(ELE= ('ELE','sum'),FYP= ('FYP','sum'),MME= ('MME','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
-# finalFourthExtc = fourth_extc.groupby(['Name','Enrolled_ID']).agg(ELE= ('ELE','sum'),FYP= ('FYP','sum'),MME= ('MME','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))["Lec_Attended_Percentage"].nsmallest(20)
+# # finalFourthExtc = fourth_extc.groupby(['Name','Enrolled_ID']).agg(ELE= ('ELE','sum'),FYP= ('FYP','sum'),MME= ('MME','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
+# finalFourthExtc = fourth_extc.groupby(['Name','Enrolled_ID']).agg(ELE= ('ELE','sum'),FYP= ('FYP','sum'),MME= ('MME','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))["Lec_Attended_Percentage"].nsmallest(20)
 # print(finalFourthExtc)
 

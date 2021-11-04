@@ -45,7 +45,7 @@ week = week.loc[(week['Branch'] == 'MECH')]
 
 finalweek = week.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),M3= ('M3','sum'),SOM= ('SOM','sum'),THERMO= ('THERMO','sum'),
                                                            HT= ('HT','sum'),DESIGN= ('DESIGN','sum'),MANU= ('MANU','sum'),MD= ('MD','sum'),
-                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
+                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
 
 print(finalweek)
 
@@ -64,7 +64,7 @@ print(week)
 
 finalweek = week.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),M3= ('M3','sum'),SOM= ('SOM','sum'),THERMO= ('THERMO','sum'),
                                                            HT= ('HT','sum'),DESIGN= ('DESIGN','sum'),MANU= ('MANU','sum'),MD= ('MD','sum'),
-                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
+                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
 
 # print(finalweek)
 
@@ -83,7 +83,7 @@ for i in range(5,7):
 
   finalweek = week.groupby(['Name','Enrolled_ID']).agg(M1= ('M1','sum'),CP= ('CP','sum'),BEE= ('BEE','sum'),M3= ('M3','sum'),SOM= ('SOM','sum'),THERMO= ('THERMO','sum'),
                                                            HT= ('HT','sum'),DESIGN= ('DESIGN','sum'),MANU= ('MANU','sum'),MD= ('MD','sum'),
-                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended(%)','mean'))
+                                                           IE= ('IE','sum'),PPE= ('PPE','sum'),Lec_Attended_Percentage= ('Lec_Attended_Percentage','mean'))
 
   print(finalweek)
 

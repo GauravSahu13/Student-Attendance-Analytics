@@ -16,7 +16,7 @@ def subject(s1, s2, s3, name_lst, counter):
                  'Year': c_year,
                  'Branch': "DEMO",
                  'Total no.of Lec': Total_Lec,
-                 'Lec_Attended(%)': round((((attended_s1 + attended_s2 + attended_s3) / Total_Lec) * 100), 2),
+                 'Lec_Attended_Percentage': round((((attended_s1 + attended_s2 + attended_s3) / Total_Lec) * 100), 2),
                  f'{s1}': attended_s1,
                  f'{s2}': attended_s2,
                  f'{s3}': attended_s3,}
