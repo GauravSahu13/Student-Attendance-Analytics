@@ -12,6 +12,7 @@ def home():
 
 
 
+
 @app.route("/view_student")
 def view_student():
     # View Student Details in Each Branch after analysis
