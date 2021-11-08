@@ -10,10 +10,6 @@ def home():
     # Home Page consists of Student Management System
     return render_template("home.html")
 
-
-
-
-
 @app.route("/view_student")
 def view_student():
     # View Student Details in Each Branch after analysis
@@ -32,6 +28,9 @@ def mech():
 @app.route("/comps")
 def comps():
     return render_template("comps.html")
+# @app.route("/markattendance")
+# def viewattendance():
+#     return render_template("view.html")
 
 
 @app.route("/add_student", methods=["GET", "POST"])
